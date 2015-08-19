@@ -1,4 +1,4 @@
-package com.mqn.dao;
+package com.es.hibernateUtils;
 
 import java.io.Serializable;
 import java.util.List;
@@ -176,6 +176,14 @@ public interface BaseDao<T> {
 	 * @param t
 	 */
 	void update(T t);
+
+	/**
+	 * 保存或更新对象
+	 * 如对象存在则更新对象，对象不存在则添加对象
+	 *
+	 * @param t
+	 */
+	void saveOrUpdate(T t);
 
 	/**
 	 * 删除对象

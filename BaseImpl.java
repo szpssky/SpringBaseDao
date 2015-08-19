@@ -1,4 +1,4 @@
-package com.mqn.dao;
+package com.es.hibernateUtils;
 
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
@@ -221,6 +221,11 @@ public class BaseImpl<T> implements BaseDao<T> {
 	@Override
 	public void update(T t) {
 		getSession().update(t);
+	}
+
+	@Override
+	public void saveOrUpdate(T t){
+		getSession().saveOrUpdate(t);
 	}
 
 	@Override
