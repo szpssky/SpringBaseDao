@@ -179,7 +179,6 @@ public interface BaseDao<T> {
 
 	/**
 	 * 保存或更新对象
-	 * 如对象存在则更新对象，对象不存在则添加对象
 	 *
 	 * @param t
 	 */
